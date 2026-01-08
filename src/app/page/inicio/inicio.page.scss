@@ -1,0 +1,130 @@
+:host {
+  display: block;
+  --background: #f7f8fb;
+}
+
+.inicio-content {
+  padding-bottom: 0;
+  background: linear-gradient(180deg, #ffffff 0%, #f7f8fb 100%);
+}
+
+.hero {
+  background: linear-gradient(90deg, #0f172a 0%, #1e293b 100%);
+  color: #fff;
+  padding: 40px 16px;
+  text-align: center;
+  .hero-inner {
+    max-width: 920px;
+    margin: 0 auto;
+    h1 {
+      font-size: 1.9rem;
+      margin-bottom: 8px;
+      font-weight: 700;
+    }
+    p {
+      color: rgba(255, 255, 255, 0.85);
+      margin-bottom: 16px;
+    }
+    ion-button {
+      --background: #06b6d4;
+      --border-radius: 8px;
+    }
+  }
+}
+
+.features {
+  padding: 20px 12px;
+  ion-card {
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(2,6,23,0.06);
+    transition: transform 180ms ease, box-shadow 180ms ease;
+    .feature-icon {
+      font-size: 28px;
+      color: #06b6d4;
+      margin-right: 8px;
+    }
+    ion-card-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    &:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 14px 30px rgba(2,6,23,0.08);
+    }
+  }
+}
+
+.how-it-works {
+  padding: 12px;
+  h2 {
+    margin: 8px 0 12px;
+    text-align: center;
+    font-weight: 600;
+  }
+  ion-item {
+    --background: transparent;
+    --inner-padding-end: 12px;
+    ion-icon {
+      font-size: 26px;
+      color: #0f172a;
+    }
+    h3 {
+      margin: 0;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+    p {
+      margin: 4px 0 0;
+      color: #4b5563;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+.cta {
+  padding: 16px;
+  ion-card {
+    --border-radius: 12px;
+    padding: 12px;
+    .cta-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      h3 {
+        margin: 0 0 4px;
+      }
+      p {
+        margin: 0 0 0;
+        color: #6b7280;
+      }
+      ion-button {
+        --border-radius: 8px;
+      }
+    }
+  }
+}
+
+.page-footer {
+  ion-toolbar {
+    --background: transparent;
+    text-align: center;
+    ion-title {
+      font-size: 0.85rem;
+      color: #6b7280;
+    }
+  }
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .hero .hero-inner h1 {
+    font-size: 1.5rem;
+  }
+  .cta .cta-inner {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
